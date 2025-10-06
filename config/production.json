@@ -1,0 +1,19 @@
+{
+  "bot": {
+    "autoRestart": true,
+    "restartDelay": 10000
+  },
+  "features": {
+    "autoRead": false,
+    "autoTyping": false
+  },
+  "logging": {
+    "level": "warn",
+    "file": true,
+    "console": false
+  },
+  "deployment": {
+    "healthCheck": true,
+    "docker": true
+  }
+}
