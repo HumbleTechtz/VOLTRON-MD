@@ -1,0 +1,64 @@
+{
+  "bot": {
+    "name": "VOLTRON-MD",
+    "version": "3.0.0",
+    "prefix": ".",
+    "sessionCount": 3,
+    "maxSessions": 5,
+    "autoRestart": true,
+    "restartDelay": 5000
+  },
+  "sessions": [
+    {
+      "id": "voltron-session-1",
+      "prefix": ".",
+      "description": "Primary Session",
+      "enabled": true
+    },
+    {
+      "id": "voltron-session-2",
+      "prefix": "!",
+      "description": "Secondary Session", 
+      "enabled": true
+    },
+    {
+      "id": "voltron-session-3",
+      "prefix": "#",
+      "description": "Backup Session",
+      "enabled": true
+    }
+  ],
+  "features": {
+    "antiSpam": true,
+    "antiLink": true,
+    "autoRead": false,
+    "autoTyping": false,
+    "welcomeMessage": true,
+    "goodbyeMessage": true,
+    "autoBackup": true
+  },
+  "security": {
+    "allowedUsers": ["all"],
+    "blockedUsers": [],
+    "adminNumbers": [],
+    "maxMessageLength": 1000,
+    "rateLimit": {
+      "enabled": true,
+      "windowMs": 60000,
+      "max": 30
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": true,
+    "console": true,
+    "maxFiles": 10,
+    "maxSize": "10m"
+  },
+  "deployment": {
+    "port": 3000,
+    "healthCheck": true,
+    "docker": true,
+    "platform": "koyeb"
+  }
+}
